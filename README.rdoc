@@ -2,9 +2,9 @@ Basic Crud Application: College Professors (see attachement)
 
 == Getting Started
 
-1. bundle
-2. rake db:create
-3. rake db:migrate
-4. rake db:seed
-5. rails s
-6. Go to: http://localhost:3000/
+1. docker-compose build
+2. docker-compose run web rake db:setup
+3. docker-compose run web rake db:create
+4. docker-compose run web rake db:migrate
+5. check your ip: boot2docker ip
+6. Go to: ip:13000

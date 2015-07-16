@@ -1,0 +1,16 @@
+web:
+  build: .
+  volumes:
+    - .:/college_professors
+  command: bundle exec rails s -p 3000 -b '0.0.0.0'
+  ports:
+    - '13000:3000'
+  links:
+    - db
+
+db:
+  image: library/mysql
+  ports:
+    - '13306:3306'
+  environment:
+    MYSQL_ROOT_PASSWORD: root
