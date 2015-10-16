@@ -6,5 +6,6 @@ Basic Crud Application: College Professors (see attachement)
 2. docker-compose run web rake db:setup
 3. docker-compose run web rake db:create
 4. docker-compose run web rake db:migrate
-5. check your ip: boot2docker ip
-6. Go to: ip:13000
+5. docker-compose up -d web
+6. check your ip: boot2docker ip
+7. Go to: ip:13000
